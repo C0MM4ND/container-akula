@@ -1,4 +1,4 @@
-name: erigon
+name: akula
 on:
   push:
   schedule:
@@ -17,7 +17,7 @@ jobs:
         with:
           submodules: true
 
-      - name: Update erigon
+      - name: Update akula
         run: git pull --recurse-submodules
 
       - name: Log in to the Container registry

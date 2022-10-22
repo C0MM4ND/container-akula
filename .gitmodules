@@ -1,4 +1,3 @@
-[submodule "erigon"]
-	path = erigon
-	url = https://github.com/ledgerwatch/erigon.git
-	branch = stable
+[submodule "akula"]
+	path = akula
+	url = https://github.com/akula-bft/akula.git
