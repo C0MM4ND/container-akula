@@ -14,14 +14,9 @@ jobs:
       packages: write
     steps:
       - uses: actions/checkout@v3
-        with:
-          submodules: true
-
-      - name: Update akula
-        run: git pull --recurse-submodules
 
       - name: Change Dockerfile
-        run: cp Dockerfile akula/Dockerfile && cd akula
+        run: git clone https://github.com/akula-bft/akula && cp Dockerfile akula/Dockerfile && cd akula
 
       - name: Log in to the Container registry
         uses: docker/login-action@v2
