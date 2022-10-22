@@ -20,6 +20,9 @@ jobs:
       - name: Update akula
         run: git pull --recurse-submodules
 
+      - name: Change Dockerfile
+        run: cp Dockerfile akula/Dockerfile && cd akula
+
       - name: Log in to the Container registry
         uses: docker/login-action@v2
         with:

@@ -14,7 +14,7 @@ RUN ./install_rust.sh -y
 ENV PATH="${PATH}:/root/.cargo/bin"
 
 WORKDIR /akula
-ADD ./akula .
+ADD . .
 
 RUN cargo build --workspace --profile=production
 
